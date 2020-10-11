@@ -5,7 +5,7 @@ FLAGS := -v
 
 .PHONY: all build clean lint install-deps $(PROTODIR)
 
-all: build test lint node
+all: build test node
 
 # build core package
 build: $(PROTODIR)
