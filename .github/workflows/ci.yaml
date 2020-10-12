@@ -6,7 +6,7 @@ name: CI
   pull_request:
     branches: [lintners]
 jobs:
-  build,-lint-and-test:
+  build-and-test:
     name: Build and test
     runs-on: ubuntu-latest
     steps:
