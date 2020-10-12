@@ -34,7 +34,7 @@ func Start() {
 	degitxpb.RegisterObjectPoolServiceServer(grpcServer, &degitxpb.UnimplementedObjectPoolServiceServer{})
 	degitxpb.RegisterHookServiceServer(grpcServer, &degitxpb.UnimplementedHookServiceServer{})
 	degitxpb.RegisterInternalGitalyServer(grpcServer, &degitxpb.UnimplementedInternalGitalyServer{})
-	//lol comment
+	// lol comment
 	reflection.Register(grpcServer)
 
 	l, err := net.Listen("tcp", ":8080") //nolint:gosec // It's only a stub
@@ -47,6 +47,5 @@ func Start() {
 	}
 }
 
-func End() {
-
+func end() {
 }
