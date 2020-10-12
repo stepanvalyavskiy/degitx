@@ -35,9 +35,9 @@ func Start() {
 	degitxpb.RegisterHookServiceServer(grpcServer, &degitxpb.UnimplementedHookServiceServer{})
 	degitxpb.RegisterInternalGitalyServer(grpcServer, &degitxpb.UnimplementedInternalGitalyServer{})
 
-	reflection.Register(grpcServer) //no comment
+	reflection.Register(grpcServer)
 
-	l, err := net.Listen("tcp", ":8080")
+	l, err := net.Listen("tcp", ":8080") //nolint:gosec // It's only a stub
 	if err != nil {
 		log.Fatal(err)
 	}
