@@ -46,3 +46,7 @@ func Start() {
 		log.Fatal(err)
 	}
 }
+
+func End() {
+
+}
