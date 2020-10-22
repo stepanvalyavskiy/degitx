@@ -37,7 +37,7 @@ func Start() {
 
 	reflection.Register(grpcServer)
 
-	l, err := net.Listen("tcp", ":8080") //nolint:gosec // It's only a stub
+	l, err := net.Listen("tcp", ":8075") //nolint:gosec // It's only a stub
 	if err != nil {
 		log.Fatal(err)
 	}
